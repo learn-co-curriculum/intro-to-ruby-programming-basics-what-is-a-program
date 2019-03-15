@@ -248,15 +248,30 @@ fully finish reading the file.
 Now that we have a better sense of how to _read_ a Ruby program, its time to
 practice editing a program. In this lesson, there is one test that must be
 passed to continue on to the next lesson: fix the error in `a_ruby_program.rb`.
-As we've seen, we _know_ what the cause of the error is. The bareword `see` is
-undefined. We don't have any use for this bareword, so the easiest way to
-resolve our error is to just remove `see` from the file:
 
-1. Open up `a_ruby_program.rb`
-2. At the bottom of the file, delete `see`. Save the file after deleting
-3. Run `learn` in the command line to run this lesson's test
-4. If you have successfuly fixed the problem, when `learn` is run, you should
-   see the following print out:
+As we've seen, we _know_ what the cause of the error is: the bareword `see` is
+undefined. We don't have any use for this bareword, so the easiest way to
+resolve our error is to just remove `see` from the file.
+
+## Edit and Save the Ruby File
+
+Open up `a_ruby_program.rb`. At the bottom of the file, delete `see`. This
+should fix our issue, but before we run the program again, we need to _save_.
+
+Anytime you make changes to a file (like the one you've just made) you need to
+save the file so your changes are preserved. If you forget to save the file
+before you run your tests, the last saved version of the file will be run --
+**without your changes** -- and this can be very confusing! In this case, if you
+forget to save, the program will still produce an error when run.
+
+Always remember to save the file every time you make changes by selecting `Save`
+from the `File` menu in your editor.
+
+## Testing Your Work
+
+To run the test in this lesson and see if you have passed, type `learn` into the
+command line and press `enter`/`return`. If you have successfully fixed the
+problem, when `learn` is run, you should see the following print out:
 
 ```
 ./a_ruby_program.rb
@@ -280,12 +295,18 @@ Finished in 0.00781 seconds (files took 0.19431 seconds to load)
 1 example, 0 failures
 ```
 
+## Submit a Learn Lab
+
+With a working solution, you're ready to move on to the next lesson. Submit
+your work by typing `learn submit` into your terminal, then click "Next
+Lesson" to move forward when you are ready.
+
 ## Conclusion
 
 Understanding the complexity of programs can be intimidating at first glance.
 However, programs don't have to be mysterious black boxes that magically work.
 With a little context and knowledge of a programming language's syntax, we are
-able to not only read code in a program but make edits to it!
+able to not only read code in a program but also make edits to it!
 
 Ruby syntax is designed to be easy to read and understand. When something
 doesn't work, Ruby tries its best to produce informative errors. It was designed
