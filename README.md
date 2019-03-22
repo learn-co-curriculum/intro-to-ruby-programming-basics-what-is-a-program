@@ -102,7 +102,7 @@ type: `ruby some-program.rb` from the same folder. In our case, if you are in
 the main folder of this lesson, from the command line, you can run
 `a_ruby_program.rb` by typing `ruby a_ruby_program.rb`:
 
-```
+```text
 // ♥ ruby a_ruby_program.rb
 This is a program
 Programs are interpreted at runtime.
@@ -168,7 +168,7 @@ this case, what follows `puts` is the string `"This is a program"`. When
 `a_ruby_program.rb` is run, we can see the results of this statement printed at
 the very beginning:
 
-```
+```text
 // ♥ ruby a_ruby_program.rb
 This is a program
 ...
@@ -182,7 +182,7 @@ should be treated as a [String][string].
 
 When we run `a_ruby_program.rb`, we see that at the very end, something happens:
 
-```
+```text
 ...
 Programs are composed of basically three things:
 A language's keywords, like 'if' or 'end' (approximately 43).
@@ -246,8 +246,8 @@ fully finish reading the file.
 ## Fixing Our Ruby Program
 
 Now that we have a better sense of how to _read_ a Ruby program, its time to
-practice editing a program. In this lesson, there is one test that must be
-passed to continue on to the next lesson: fix the error in `a_ruby_program.rb`.
+practice editing a program. We're going to fix the error at the end of
+`a_ruby_program.rb`.
 
 As we've seen, we _know_ what the cause of the error is: the bareword `see` is
 undefined. We don't have any use for this bareword, so the easiest way to
@@ -267,13 +267,35 @@ forget to save, the program will still produce an error when run.
 Always remember to save the file every time you make changes by selecting `Save`
 from the `File` menu in your editor.
 
+Run `ruby a_ruby_program.rb` once you've made your edit to the file. You should
+only see the printed text with no error at the end:
+
+```text
+This is a program
+Programs are interpreted at runtime.
+Which means even though I'm writing this Tue Jan 17 2012 8:36am
+the time now is 2019-03-22 12:12:35 -0400
+Programs have flow.
+Which means that you see this first
+and this next.
+Lines of code are executed linearly, that's flow.
+First come, first served.
+Programs are composed of basically three things:
+A language's keywords, like 'if' or 'end' (approximately 43).
+Literal pieces of data like this very sentence (or String).
+Finally, barewords, or variables, that are set equal to things.
+Anything that isn't one of those will cause an error.
+```
+
 ## Testing Your Work
 
-To run the test in this lesson and see if you have passed, type `learn` into the
+Once you have confirmed the error is no longer appearing, its time to test the
+code. This lesson has a single test in it that must be passed to register
+completion of the lesson. To run the test in this lesson, type `learn` into the
 command line and press `enter`/`return`. If you have successfully fixed the
 problem, when `learn` is run, you should see the following print out:
 
-```
+```text
 ./a_ruby_program.rb
 This is a program
 Programs are interpreted at runtime.
@@ -295,11 +317,13 @@ Finished in 0.00781 seconds (files took 0.19431 seconds to load)
 1 example, 0 failures
 ```
 
+One example with zero failures means you have passed the test.
+
 ## Submit a Learn Lab
 
-With a working solution, you're ready to move on to the next lesson. Submit
-your work by typing `learn submit` into your terminal, then click "Next
-Lesson" to move forward when you are ready.
+With a working solution, you're ready to move on to the next lesson. Submit your
+work by typing `learn submit` into your terminal and pressing `enter`/`return`,
+then click "Next Lesson" to move forward when you are ready.
 
 ## Conclusion
 
