@@ -1,6 +1,6 @@
 # What is a Program?
 
-### Learning Goals:
+## Learning Goals:
 
 - Describe what a program is
 - Look some examples of programs
