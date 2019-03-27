@@ -1,13 +1,13 @@
 # What is a Program?
 
-### Learning Goals:
+## Learning Goals:
 
-- Describe what a program is
-- Look some examples of programs
-- List and describe the words that compose code: keywords, barewords, and data
-- Recognize how programs adhere to a particular flow
-- Identify when and why errors occur in programming
-- Fix an error
+- Identify what a program is
+- Consider examples of programs
+- Identify code compososition terms
+- Explore the process of running code
+- Recognize a program flow
+- Identify when and why errors occur
 
 ## Introduction
 
@@ -18,10 +18,10 @@ However, programs are actually way more accessible, runnable and understandable
 than they may seem at first. In this lesson, we're going to discuss what programs
 are, look at some examples, and run a program ourselves.
 
-## What is a Program?
+## Identify What a Program Is
 
 All programs are just files on your computer filled with text. That text has a
-special syntax we call code. Programs can be written in many different
+special [syntax][syntax] we call _code_. Programs can be written in many different
 programming languages, each with their own syntax defining what you are allowed
 to write and how.
 
@@ -31,7 +31,7 @@ need to be [compiled][compiled] to machine code prior to being run. Some
 languages, like Ruby, can be interpreted and converted to machine code at run
 time.
 
-## Examples of Programs
+## Consider Examples of Programs
 
 In this lesson is an example of a [compiled][compiled] program, a file named
 `hello`. The file contents of `hello` won't make any sense to us, but it is
@@ -83,7 +83,7 @@ compiling code then running the resulting compiled file. Instead, we use an
 interpreter that will read and translate the contents of `a_ruby_program.rb`,
 turning it into machine code for our computers to understand and execute.
 
-## Running a Ruby Program
+## Explore the Process of Running Code
 
 Once you have a Ruby program as a file, you can run it through the Ruby
 interpreter to execute it. Your Ruby interpreter is accessible via the `ruby`
@@ -143,7 +143,7 @@ convert it into some text.'_ Because `a_ruby_program.rb` is interpreted at run
 time, the result of `Time.now.to_s` will always be different depending on _when_
 the program is run.
 
-## Words in a Program
+## Identify Code Compososition Terms
 
 Every word and character in a program has to be valid code for the Ruby
 language. Basically, every word can be one of three possible things:
@@ -219,7 +219,7 @@ With just these building blocks, we can create all kinds of programs! Ruby
 programs can be as simple as printing out text and the current time. They can
 also be incredibly complex and powerful.
 
-## Flow
+## Recognize a Program Flow
 
 Programs like `a_ruby_program.rb` have a _flow_. That is to say, each statement
 in the program is executed in order, one after the other, from the top of the
@@ -243,7 +243,7 @@ is written _after_ `see` in `a_ruby_program.rb`, the interpreter will never get
 to it. We would need to fix the error first to allow for the interpreter to
 fully finish reading the file.
 
-## Fixing Our Ruby Program
+## Identify When and Why Errors Occur
 
 Now that we have a better sense of how to _read_ a Ruby program, its time to
 practice editing a program. We're going to fix the error at the end of
@@ -253,7 +253,7 @@ As we've seen, we _know_ what the cause of the error is: the bareword `see` is
 undefined. We don't have any use for this bareword, so the easiest way to
 resolve our error is to just remove `see` from the file.
 
-## Edit and Save the Ruby File
+### Edit and Save the Ruby File
 
 Open up `a_ruby_program.rb`. At the bottom of the file, delete `see`. This
 should fix our issue, but before we run the program again, we need to _save_.
@@ -287,7 +287,7 @@ Finally, barewords, or variables, that are set equal to things.
 Anything that isn't one of those will cause an error.
 ```
 
-## Testing Your Work
+### Testing Your Work
 
 Once you have confirmed the error is no longer appearing, its time to test the
 code. This lesson has a single test in it that must be passed to register
@@ -319,7 +319,7 @@ Finished in 0.00781 seconds (files took 0.19431 seconds to load)
 
 One example with zero failures means you have passed the test.
 
-## Submit a Learn Lab
+### Submit a Learn Lab
 
 With a working solution, you're ready to move on to the next lesson. Submit your
 work by typing `learn submit` into your terminal and pressing `enter`/`return`,
@@ -341,6 +341,7 @@ with on the journey to becoming a programmer.
 
 [Video Lecture - What is a Program?][video]
 
+[syntax]: https://en.wikipedia.org/wiki/Syntax_(programming_languages)
 [compiled]: http://en.wikipedia.org/wiki/Compiled_language
 [interpreted]: http://en.wikipedia.org/wiki/Interpreted_language
 [machine]: https://en.wikipedia.org/wiki/Machine_code
