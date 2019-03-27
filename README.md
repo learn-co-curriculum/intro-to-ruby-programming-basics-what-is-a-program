@@ -21,7 +21,7 @@ are, look at some examples, and run a program ourselves.
 ## What is a Program?
 
 All programs are just files on your computer filled with text. That text has a
-special syntax we call code. Programs can be written in many different
+special [syntax][syntax] we call _code_. Programs can be written in many different
 programming languages, each with their own syntax defining what you are allowed
 to write and how.
 
@@ -341,6 +341,7 @@ with on the journey to becoming a programmer.
 
 [Video Lecture - What is a Program?][video]
 
+[syntax]: https://en.wikipedia.org/wiki/Syntax_(programming_languages)
 [compiled]: http://en.wikipedia.org/wiki/Compiled_language
 [interpreted]: http://en.wikipedia.org/wiki/Interpreted_language
 [machine]: https://en.wikipedia.org/wiki/Machine_code
